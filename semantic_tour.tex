@@ -1,0 +1,192 @@
+\documentclass{book}
+\usepackage[utf8x]{inputenc}
+%\usepackage[french]{babel}
+
+\usepackage{amssymb,amscd,latexsym,amsmath,amstext,amsfonts}
+\usepackage{url}
+\usepackage{xcolor}
+\usepackage{multicol,float}
+\usepackage{graphicx}
+\usepackage{listings}
+
+\lstdefinelanguage{Dedukti}
+{
+	inputencoding=utf8,
+	extendedchars=true,
+	numbers=none,
+	numberstyle={},
+	tabsize=2,
+	basicstyle={\ttfamily\small\upshape},
+	backgroundcolor=\color{lightgrey},
+	keywords={abort,admit,apply,as,assert,assertnot,assume,compute,constant,definition,focus,in,injective,let,open,print,private,proof,proofterm,protected,qed,refine,reflexivity,require,rewrite,rule,set,simpl,symmetry,symbol,theorem,type,TYPE,why3,with, inductive},
+	sensitive=true,
+	keywordstyle=\color{blue},
+	morecomment=[l]{//},
+	commentstyle={\itshape\color{red}},
+	string=[b]{"},
+	stringstyle=\color{green},
+	showstringspaces=false,
+	literate={↪}{$\hookrightarrow$}1 {→}{$\rightarrow$}1 {Π}{$\Pi$}1
+	{≔}{:=}1
+	{⇒}{$\Rightarrow$}1
+	{⊃}{$\Rightarrow$}1  %{$\supseq$}1
+	{⇔}{$\Leftrightarrow$}1
+	{∀}{$\forall$}1
+	{∃}{$\exists$}1
+	{⊥}{$\bot$}1
+	{⊤}{$\top$}1
+	{¬}{$\neg$}1
+	{≡}{$\equiv$}1
+	{ℕ}{$\mathbb{N}$}1
+	{α}{$\alpha$}1 {π}{$\pi$}1 {τ}{$\tau$}1 {ω}{$\omega$}1 {λ}{$\lambda$}1
+	{□}{$\square$}1 {⸬}{::}1
+	{∧}{$\wedge$}1 {∨}{$\lor$}1
+	{≤}{$\le$}1 {≠}{$\neq$}1 {∉}{$\notin$}1
+	{×}{$\times$}1 {+}{+}1
+	{⋅}{$\cdot$}1
+}
+
+\definecolor{beige}{rgb}{1.0, 0.99, 0.82}
+\definecolor{orange_coq}{RGB}{255,69,0}
+\definecolor{green_coq}{RGB}{0,100,0}
+\definecolor{blue_coq}{RGB}{0,0,128}
+\definecolor{blue_type}{RGB}{0,128,128}
+\definecolor{brown_coq}{RGB}{88,41,0}
+\definecolor{violet}{rgb}{0.54, 0.17, 0.89}
+
+
+\lstdefinelanguage{Coq}
+{
+	inputencoding=utf8,
+	extendedchars=true,
+	numbers=none,
+	numberstyle={}, %\tiny\color{black},
+	tabsize=2,
+	basicstyle=\small,
+	sensitive=true,
+	backgroundcolor=\color{beige},
+	keywords={[0]Theorem, Lemma, Record, Inductive, Record, Fixpoint, Function, Definition, Axiom},
+	keywordstyle={[0]\color{orange_coq} \bfseries},  
+	keywords={[1]make, elt_list_member, member, elt_list_remove, remove, create, get_min, process_size, process_max, unsafe_create, sortWithoutDup},
+	keywordstyle={[1]\color{blue}},
+	keywords={[2]forall, if, then, else, match,with, end, let, in },
+	keywordstyle={[2]\color{green_coq}},
+	keywords={[4]Type, Prop}, 
+	keywordstyle={[4]\color{blue_type}\bfseries},
+	keywords={[5]Proof, Qed, Defined, Abort, 
+		+, -, *, {, }}, 
+	keywordstyle={[5]\color{violet} \bfseries},
+	morecomment=[l]{(*},
+	commentstyle={\itshape\color{brown_coq}\bfseries},
+	string=[b]{"},
+	stringstyle=\color{red},
+	showstringspaces=false,
+	literate={ -> }{$\rightarrow$}1 { <- }{$\leftarrow$}1 
+	{<-> }{$\leftrightarrow$}1
+	{\\/}{$\lor$}1 {/\\}{$\land$}1
+	{~}{$\sim$}1
+	{Π}{$\Pi$}1
+	{≔}{$\coloneqq$}1
+	{α}{$\alpha$}1 {π}{$\pi$}1 {τ}{$\tau$}1 {ω}{$\omega$}1
+	{≤}{$\le$}1 {≠}{$\neq$}1 {∉}{$\notin$}1,
+	% Pour le cadre du code
+	aboveskip=1mm,
+	%belowskip=-2mm,
+	breakatwhitespace=false,
+	breaklines=true,
+	captionpos=b,
+	escapeinside={\%*}{*)},
+	extendedchars=true,  
+	framexleftmargin=1pt,
+	framextopmargin=3pt,
+	framexbottommargin=6pt,
+	frame=tb,
+	keepspaces=true,
+	% Code pas compris
+	formfeed=newpage,
+	morekeywords={models, lambda, forms}
+	morekeywords={*,...},
+	deletekeywords={...},
+	rulecolor=\color{black},
+	showspaces=false,
+	showstringspaces=false,
+	showtabs=false,
+	stepnumber=1,
+	%title=\lstname
+}
+
+\lstdefinelanguage{OCaml}
+{
+	inputencoding=utf8,
+	extendedchars=true,
+	numbers=none,
+	numberstyle={},
+	tabsize=2,
+	basicstyle={\ttfamily\small\upshape},
+	backgroundcolor=\color{yellow},
+	keywords={let,rec,in,begin,end,match,with,fun,if,then,else,type,of},
+	sensitive=true,
+	keywordstyle=\color{green},
+	commentstyle={\itshape\color{brown}},
+	string=[b]{"},
+	stringstyle=\color{red},
+	showstringspaces=false
+}
+
+
+\lstdefinelanguage{K}
+{
+	inputencoding=utf8,
+	extendedchars=true,
+	numbers=none,
+	numberstyle={},
+	tabsize=2,
+	basicstyle={\ttfamily\small\upshape},
+	backgroundcolor=\color{green},
+	keywords={module,imports,endmodule,syntax,configuration,context,rule},
+	sensitive=true,
+	keywordstyle=\color{blue},
+	commentstyle={\itshape\color{brown}},
+	string=[b]{"},
+	stringstyle=\color{red},
+	showstringspaces=false
+}
+
+\title{Un tour de monde de sémantique}
+\author{Amélie Ledein}
+\date{}
+
+\newcommand{\Coqroot}{Coq_SemantiK}
+\newcommand{\OCamlroot}{OCaml_SemantiK}
+\newcommand{\Deduktiroot}{Dedukti_SemantiK}
+\newcommand{\Kroot}{K_SemantiK}
+
+\newcommand{\Introroot}{Book_SemantiK/0_Introduction}
+\newcommand{\Arithroot}{Book_SemantiK/1_Expressions_Arith}
+\newcommand{\Boolroot}{Book_SemantiK/2_Expressions_Bool}
+\newcommand{\IMProot}{Book_SemantiK/3_IMP}
+\newcommand{\MiniMLroot}{Book_SemantiK/4_MiniML}
+\newcommand{\Objetroot}{Book_SemantiK/5_Objet}
+\newcommand{\Concluroot}{Book_SemantiK/6_Conclusion}
+
+\newcommand{\Texroot}{../..}
+
+\begin{document}
+	
+	\maketitle
+	
+	%\input{\Introroot/intro.tex}
+	
+	%\input{\Arithroot/expr_arith.tex}	
+	
+	%\input{\Boolroot/expr_bool.tex}
+	
+	%\input{\IMProot/IMP.tex}
+	
+	%\input{\MiniMLroot/MiniML.tex}
+	
+	%\input{\Objetroot/objet.tex}
+	
+	%\input{\Concluroot/conclusion.tex}
+	
+\end{document}

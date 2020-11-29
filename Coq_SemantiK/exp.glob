@@ -1,0 +1,165 @@
+DIGEST e1a4b3e9049416f00d23902f0270c4f7
+Fexp
+R19:24 Coq.ZArith.ZArith <> <> lib
+R46:55 Coq.ZArith.ZArith_dec <> <> lib
+R77:80 Coq.ZArith.Zdiv <> <> lib
+R102:105 Coq.Bool.Bool <> <> lib
+R127:130 Coq.Lists.List <> <> lib
+ax 233:233 <> V
+ax 252:259 <> eq_dec_V
+R277:277 exp <> V defax
+R281:281 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R287:289 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R296:296 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R284:284 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R282:283 exp <> v1 var
+R285:286 exp <> v2 var
+R290:290 Coq.Init.Logic <> ::type_scope:'~'_x not
+R293:293 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R291:292 exp <> v1 var
+R294:295 exp <> v2 var
+ind 310:312 <> Exp
+constr 324:325 <> nb
+constr 340:342 <> var
+constr 357:359 <> pls
+constr 383:385 <> mlt
+constr 409:411 <> opp
+R330:333 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R334:336 exp <> Exp ind
+R329:329 Coq.Numbers.BinNums <> Z ind
+R347:350 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R351:353 exp <> Exp ind
+R346:346 exp <> V defax
+R366:369 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R373:376 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R377:379 exp <> Exp ind
+R370:372 exp <> Exp ind
+R363:365 exp <> Exp ind
+R392:395 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R399:402 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R403:405 exp <> Exp ind
+R396:398 exp <> Exp ind
+R389:391 exp <> Exp ind
+R418:421 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R422:424 exp <> Exp ind
+R415:417 exp <> Exp ind
+def 478:482 <> Sigma
+R494:497 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R498:498 Coq.Numbers.BinNums <> Z ind
+R493:493 exp <> V defax
+ind 589:596 <> eval_Exp
+constr 631:638 <> eval_var
+constr 687:693 <> eval_nb
+constr 738:745 <> eval_pls
+constr 866:873 <> eval_mlt
+constr 992:999 <> eval_opp
+R605:608 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R612:615 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R617:620 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R616:616 Coq.Numbers.BinNums <> Z ind
+R609:611 exp <> Exp ind
+R600:604 exp <> Sigma def
+R605:608 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R612:615 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R617:620 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R616:616 Coq.Numbers.BinNums <> Z ind
+R609:611 exp <> Exp ind
+R600:604 exp <> Sigma def
+R643:647 exp <> Sigma def
+R653:653 exp <> V defax
+R659:666 exp <> eval_Exp ind
+R679:679 exp <> s var
+R681:681 exp <> v var
+R671:673 exp <> var constr
+R675:675 exp <> v var
+R668:668 exp <> s var
+R699:703 exp <> Sigma def
+R709:709 Coq.Numbers.BinNums <> Z ind
+R715:722 exp <> eval_Exp ind
+R733:733 exp <> n var
+R727:728 exp <> nb constr
+R730:730 exp <> n var
+R724:724 exp <> s var
+R750:754 exp <> Sigma def
+R764:766 exp <> Exp ind
+R776:776 Coq.Numbers.BinNums <> Z ind
+R783:783 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R800:804 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R805:805 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R822:831 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R862:862 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R832:839 exp <> eval_Exp ind
+R858:858 Coq.ZArith.BinInt <> ::Z_scope:x_'+'_x not
+R856:857 exp <> n1 var
+R859:860 exp <> n2 var
+R844:846 exp <> pls constr
+R851:852 exp <> a2 var
+R848:849 exp <> a1 var
+R841:841 exp <> s var
+R806:813 exp <> eval_Exp ind
+R820:821 exp <> n2 var
+R817:818 exp <> a2 var
+R815:815 exp <> s var
+R784:791 exp <> eval_Exp ind
+R798:799 exp <> n1 var
+R795:796 exp <> a1 var
+R793:793 exp <> s var
+R878:882 exp <> Sigma def
+R891:893 exp <> Exp ind
+R903:903 Coq.Numbers.BinNums <> Z ind
+R909:909 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R926:930 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R931:931 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R948:957 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R988:988 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R958:965 exp <> eval_Exp ind
+R984:984 Coq.ZArith.BinInt <> ::Z_scope:x_'*'_x not
+R982:983 exp <> n1 var
+R985:986 exp <> n2 var
+R970:972 exp <> mlt constr
+R977:978 exp <> a2 var
+R974:975 exp <> a1 var
+R967:967 exp <> s var
+R932:939 exp <> eval_Exp ind
+R946:947 exp <> n2 var
+R943:944 exp <> a2 var
+R941:941 exp <> s var
+R910:917 exp <> eval_Exp ind
+R924:925 exp <> n1 var
+R921:922 exp <> a1 var
+R919:919 exp <> s var
+R1004:1008 exp <> Sigma def
+R1015:1017 exp <> Exp ind
+R1024:1024 Coq.Numbers.BinNums <> Z ind
+R1030:1030 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1047:1052 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1078:1078 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1053:1060 exp <> eval_Exp ind
+R1074:1074 Coq.ZArith.BinInt <> ::Z_scope:'-'_x not
+R1075:1076 exp <> n1 var
+R1065:1067 exp <> opp constr
+R1069:1070 exp <> a1 var
+R1062:1062 exp <> s var
+R1031:1038 exp <> eval_Exp ind
+R1045:1046 exp <> n1 var
+R1042:1043 exp <> a1 var
+R1040:1040 exp <> s var
+prf 1122:1137 <> Exp_deterministe
+R1153:1155 exp <> Exp ind
+R1163:1167 exp <> Sigma def
+R1179:1179 Coq.Numbers.BinNums <> Z ind
+R1183:1183 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1199:1203 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1204:1204 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1220:1224 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1227:1227 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1225:1226 exp <> n1 var
+R1228:1229 exp <> n2 var
+R1205:1212 exp <> eval_Exp ind
+R1218:1219 exp <> n2 var
+R1216:1216 exp <> e var
+R1214:1214 exp <> s var
+R1184:1191 exp <> eval_Exp ind
+R1197:1198 exp <> n1 var
+R1195:1195 exp <> e var
+R1193:1193 exp <> s var

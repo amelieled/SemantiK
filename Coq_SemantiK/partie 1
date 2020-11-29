@@ -1,0 +1,59 @@
+Amélie,
+
+Voici le résultat de mes fouilles. Voir fichiers joints
+
+miniml.v et typage.v sont des solutions d'un étudiant (et doctorant ensuite)
+
+Le papier avec Raphael dont j'ai parlé la semaine dernière : 
+https://hal.inria.fr/hal-01420638v1
+
+A plus tard
+
+Catherine
+
+Le 05/06/2020 à 23:23, Amelie LEDEIN a écrit :
+>
+> Bonsoir Mme Dubois,
+>
+>
+> Voici mon 2e compte-rendu autour de la partie sémantique.
+> Contrairement à ce que vous pensez, je n'ai pas beaucoup avancé (un 
+> peu Imp (je suis au lemme d'optimisation de 0 + n) et j'ai résolu mon 
+> problème avec LP et j'ai donc des variables de type 'a).
+> Je n'ai rien lu de particulier, mais par contre, est-ce que je 
+> pourrais avoir svp :
+>     - exp.v
+>     - com.v
+>     - tout autre fichier Coq en rapport avec votre cours ISL de 2003
+>     - le lien concernant un travail de Raphael Cauderlier que vous 
+> avez donné en séminaire.
+>       Je n'ai pas eu le temps de l'ouvrir car ma machine a planté...
+> La suite est un copier-coller de la dernière fois.
+>     @ Travail à effectuer :
+>          * A propos des exemples à écrire dans LP/Coq/Lem :
+>                - Enlever la paramétrisation sur les variables du 
+> travail LP effectué cette semaine, afin de le simplifier.
+>                - Ecrire les exemples de votre cours ISL en Coq (cela 
+> simplifiera le passage dans LP par la suite).
+>                - Faire le TP que vous m'aviez donné (ancien TP IIE :)) 
+> en Coq (puis en LP).
+>                - Passer les exemples du Software Foundations déjà 
+> fait, dans LP.
+>                - Passer tous les exemples de LP vers Lem.
+>          * A propos des lectures :
+>                - Continuer les documents qui sont sur le github de Lem.
+>                - Continuer le papier sur Lem que vous m'avez donné.
+>                - Continuer le Software Foundations car la suite 
+> concerne la sémantique (travail hors horaire).
+>
+>      @ Quelques questions :
+>                - Je ne comprends pas la différence entre "let" et "let 
+> inline"
+>                - Que signifie les versions de Coq 8.4pl3 / 8.4pl2 par 
+> rapport à la version courante ?
+> Amélie Ledein
+
+-- 
+Catherine Dubois, professor
+ENSIIE, lab. Samovar
+

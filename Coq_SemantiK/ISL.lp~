@@ -1,0 +1,27 @@
+require open amelie.lambdapi_examples.Notation
+require open amelie.lambdapi_examples.Nat
+require open amelie.lambdapi_examples.Bool
+require open amelie.lambdapi_examples.Operations
+require open amelie.lambdapi_examples.Constructive_logic
+
+constant symbol Vvar : Set
+set declared "𝕍var"
+definition 𝕍var ≔ τ Vvar
+
+constant symbol EA : Set
+set declared "𝔼𝔸"
+definition 𝔼𝔸 ≔ τ (EA)
+constant symbol ent   : ℕ → 𝔼𝔸                //  /!\ Z !
+constant symbol var   : 𝕍var → 𝔼𝔸
+constant symbol plus  : 𝔼𝔸 → 𝔼𝔸 → 𝔼𝔸
+constant symbol moins : 𝔼𝔸 → 𝔼𝔸 → 𝔼𝔸
+constant symbol fois  : 𝔼𝔸 → 𝔼𝔸 → 𝔼𝔸
+constant symbol div   : 𝔼𝔸 → 𝔼𝔸 → 𝔼𝔸
+symbol EA_ind (p : 𝔼𝔸 → Prop) :
+(Πn, π (p (ent n))) →
+(Πx, π (p (var x))) →
+(Πa1, π (p a1) → Πa2, π (p a2) → π (p (plus a1 a2))) →
+(Πa1, π (p a1) → Πa2, π (p a2) → π (p (moins a1 a2))) →
+(Πa1, π (p a1) → Πa2, π (p a2) → π (p (fois a1 a2))) →
+(Πa1, π (p a1) → Πa2, π (p a2) → π (p (div a1 a2))) →
+Πx, π (p x)
