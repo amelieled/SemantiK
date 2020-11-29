@@ -1,1 +1,4 @@
-.aux .log .synctex.gz
+*.aux
+*.log
+*.synctex.gz
+*.log-lp.txt
