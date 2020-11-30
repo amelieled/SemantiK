@@ -1,7 +1,0 @@
-DIGEST caeed47eb7547c40f3195e2c0c7977c4
-Fcom
-R15:20 Coq.ZArith.ZArith <> <> lib
-R38:47 Coq.ZArith.ZArith_dec <> <> lib
-R65:68 Coq.ZArith.Zdiv <> <> lib
-R86:89 Coq.Bool.Bool <> <> lib
-R107:110 Coq.Lists.List <> <> lib
